@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe - Recipe Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1 id="recipe-title">Recipe</h1>
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+</header>
+
+<main>
+  <section id="recipe-detail" class="card">
+    <!-- Filled by JS -->
+  </section>
+
+  <section id="rate-section" class="card">
+    <h3>Rate this recipe</h3>
+    <select id="rating-select">
+      <option value="">Select rating</option>
+      <option value="1">1 - Very bad</option>
+      <option value="2">2 - Bad</option>
+      <option value="3">3 - Okay</option>
+      <option value="4">4 - Good</option>
+      <option value="5">5 - Excellent</option>
+    </select>
+    <button id="rate-btn">Submit Rating</button>
+    <p id="rate-message"></p>
+  </section>
+</main>
+
+<script src="config.js"></script>
+<script src="recipe.js"></script>
+</body>
+</html>

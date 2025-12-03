@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Environment
+venv/
+.env
+*.env
+
+# Docker
+*.log
+
+# Node (if frontend later uses npm)
+node_modules/
+
+# OS files
+.DS_Store
+
+# Temporary
+*.zip
