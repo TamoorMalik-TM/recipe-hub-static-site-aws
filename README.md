@@ -4,7 +4,7 @@ A production-style cloud engineering project demonstrating how to deploy a secur
 
 This project was built entirely using WSL2 + Docker on Windows, and deployed manually to AWS (no Terraform / no CI/CD), replicating how real Cloud/DevOps engineers work.
 
-🚀 Project Overview
+**🚀 Project Overview**
 
 Recipe Hub is a full-stack web application:
 
@@ -22,7 +22,9 @@ Alerting: SNS Email Notifications
 
 This project simulates a production-grade architecture with scalable backend, monitored systems, auto-healing compute, and proper network security.
 
-🏗️ Architecture Diagram
+## 🏗️ Architecture Diagram
+
+```
                          ┌───────────────────────────┐
                          │      S3 Static Website     │
                          │  (HTML / CSS / JavaScript) │
@@ -65,9 +67,11 @@ This project simulates a production-grade architecture with scalable backend, mo
                          │          SNS Topic         │
                          │      (Email Alerts)        │
                          └───────────────────────────┘
+```
+
 
 ⚙️ Tech Stack
-🖥️ Frontend
+**🖥️ Frontend**
 
 HTML5
 
@@ -77,7 +81,7 @@ JavaScript
 
 Hosted on AWS S3 Static Website Hosting
 
-🔧 Backend
+**🔧 Backend**
 
 Python Flask
 
@@ -91,7 +95,7 @@ Dockerized backend
 
 Runs inside EC2 (Amazon Linux 2023)
 
-☁️ AWS Services Used
+**☁️ AWS Services Used**
 
 EC2 (Docker runtime)
 
@@ -115,7 +119,9 @@ SNS Email Alerts
 
 VPC (default)
 
-📁 Project Structure
+## 📁 Project Structure
+
+```
 recipe_hub_advanced/
 │
 ├── backend/
@@ -139,6 +145,7 @@ recipe_hub_advanced/
 │   └── auth.js
 │
 └── README.md
+```
 
 🧪 Local Development (WSL2 + Docker)
 Backend
@@ -160,7 +167,7 @@ Frontend runs at:
 
 http://localhost:8000
 
-☁️ AWS Deployment Steps
+**☁️ AWS Deployment Steps**
 1. Deploy Frontend to S3
 
 Create S3 bucket
@@ -222,7 +229,7 @@ Email notification for failures
 
 Real-time alerts for CPU spikes and backend errors
 
-🔒 Security
+**🔒 Security**
 Network Security Groups
 
 ALB SG: Allow HTTP from public
@@ -237,7 +244,7 @@ CloudWatchLogsFullAccess (for logging)
 
 Minimal permissions principle
 
-📊 Monitoring & Logging
+**📊 Monitoring & Logging**
 CloudWatch:
 
 EC2 CPU Utilization
@@ -260,7 +267,7 @@ High CPU usage
 
 Failed health checks
 
-🎯 What This Project Demonstrates
+**🎯 What This Project Demonstrates**
 
 This project shows real-world skills in:
 
